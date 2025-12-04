@@ -21,7 +21,7 @@ public class BookController {
     }
 
     // POST MAPPING
-    @PostMapping(value = "/upload", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    @PostMapping(value = "/create", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public BookDTO create(
             @RequestParam("title") String title,
             @RequestParam("author") String author,
